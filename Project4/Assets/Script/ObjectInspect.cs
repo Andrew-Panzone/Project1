@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,6 +7,7 @@ public class ObjectInspect : MonoBehaviour
 {
     //object
     public Transform objectToInspect;
+
     //trigger distance
     public float inspectDistance = 5f;
 
@@ -76,10 +79,6 @@ public class ObjectInspect : MonoBehaviour
         {
             inspectText.gameObject.SetActive(false);
             isInRange = false;
-            if (isInspecting)
-            {
-                StopInspecting();
-            }
         }
     }
 }
