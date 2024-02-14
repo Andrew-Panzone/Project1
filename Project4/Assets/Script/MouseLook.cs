@@ -9,6 +9,7 @@ public class MouseLook : MonoBehaviour
     public float mouseSensitivity = 80;
 
     float pitch = 0;
+    private bool isInspectMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,5 +34,12 @@ public class MouseLook : MonoBehaviour
         pitch = Mathf.Clamp(pitch, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(pitch, 0, 0);
+    }
+
+    public void ToggleInspectMode(bool isInspecting)
+    {
+        isInspectMode = isInspecting;
+        Cursor.visible = isInspecting;
+        Cursor.lockState = isInspecting ? CursorLockMode.None : CursorLockMode.Locked;
     }
 }
