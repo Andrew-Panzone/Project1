@@ -6,7 +6,7 @@ public class MouseLook : MonoBehaviour
 {
 
     Transform playerBody;
-    public float mouseSensitivity = 80;
+    public float mouseSensitivity = 250;
 
     float pitch = 0;
     private bool isInspectMode = false;
