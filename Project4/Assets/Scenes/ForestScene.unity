@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4390406, g: 0.42222756, b: 0.49370295, a: 1}
+  m_IndirectSpecularColor: {r: 0.4390116, g: 0.4222166, b: 0.49369568, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13530,12 +13530,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2035139843}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1008881480
 MonoBehaviour:
@@ -18142,6 +18142,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 92499a937f2864aa68e68732386a9e51, type: 3}
       propertyPath: m_Name
       value: ritualSite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92499a937f2864aa68e68732386a9e51, type: 3}
+      propertyPath: m_TagString
+      value: ritualsite
       objectReference: {fileID: 0}
     - target: {fileID: 1018906834906752127, guid: 92499a937f2864aa68e68732386a9e51, type: 3}
       propertyPath: m_Mesh
@@ -44362,6 +44366,7 @@ GameObject:
   - component: {fileID: 2035139841}
   - component: {fileID: 2035139840}
   - component: {fileID: 2035139839}
+  - component: {fileID: 2035139844}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -44381,10 +44386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c011b03da746fb4d8bb6c8c138083ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpHeight: 1
-  gravity: 9.81
-  airControl: 10
+  moveSpeed: 10
+  turnSpeed: 500
+  lookSpeed: 500
+  cameraTransform: {fileID: 963194228}
 --- !u!136 &2035139840
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -44467,12 +44472,40 @@ Transform:
   m_GameObject: {fileID: 2035139838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 327, y: -238.3, z: 332.1}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 245, y: 14.28, z: 707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2035139844
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035139838}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &1400710972771148075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44534,7 +44567,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1400710972771148075}
   - {fileID: 1561914529}

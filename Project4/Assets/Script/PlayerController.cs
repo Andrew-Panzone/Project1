@@ -1,54 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float moveSpeed = 5.0f; // Speed of the character movement
+    public float turnSpeed = 500.0f; // Speed of turning left and right
+    public float lookSpeed = 500.0f; // Speed of looking up and down
 
-    public float moveSpeed = 2;
-    public float jumpHeight = 1;
-    public float gravity = 9.81f;
-    public float airControl = 10;
-    CharacterController controller;
-    Vector3 input, moveDirection;
+    private float verticalInput;
+    private float horizontalInput;
+    private float mouseInputX;
+    private float mouseInputY;
+    private float verticalLookRotation = 0f; // Track the up/down rotation
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-    }
+    public Transform cameraTransform;
 
-    // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        // Get keyboard inputs
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+        
+        // Get mouse inputs
+        mouseInputX = Input.GetAxis("Mouse X");
+        mouseInputY = Input.GetAxis("Mouse Y");
 
-        input = (transform.right * moveHorizontal + transform.forward * moveVertical).normalized;
+        // Move the player forward/backward and right/left
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
+        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime * horizontalInput);
 
-        input *= moveSpeed;
+        // Rotate the player left/right
+        transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime * mouseInputX);
 
-        if (controller.isGrounded)
-        {
-            moveDirection = input;
-
-            if (Input.GetButton("Jump"))
-            {
-                moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
-            }
-            else
-            {
-                moveDirection.y = 0.0f;
-            }
-        }
-        else
-        {
-            input.y = moveDirection.y;
-            moveDirection = Vector3.Lerp(moveDirection, input, airControl * Time.deltaTime);
-        }
-
-        moveDirection.y -= gravity * Time.deltaTime;
-
-        controller.Move(moveDirection * Time.deltaTime);
+        // Look up/down
+        verticalLookRotation -= mouseInputY * lookSpeed * Time.deltaTime;
+        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f); // Prevent over-rotation
+        cameraTransform.localEulerAngles = new Vector3(verticalLookRotation, 0f, 0f);
     }
 }
