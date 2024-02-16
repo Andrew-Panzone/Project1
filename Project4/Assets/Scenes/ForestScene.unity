@@ -38834,7 +38834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInspect: {fileID: 1858650514}
-  inspectDistance: 2
+  inspectDistance: 5
   scale: 2.5
   inspectText: {fileID: 885455959}
 --- !u!4 &1858650514 stripped
