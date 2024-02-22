@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657886, g: 0.49641275, b: 0.5748176, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c49220655c5de42b98ed172414f9ce45, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5666408b05a9db94aab8c5471a94f904, type: 2}
     - target: {fileID: 919132149155446097, guid: c49220655c5de42b98ed172414f9ce45, type: 3}
       propertyPath: m_Name
       value: coffeeTable
@@ -379,10 +383,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6202819878177480083, guid: 8f85ba1b8e191445ca074dc2a335f303, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 874e734682a907945840cefa2967ea31, type: 2}
     - target: {fileID: 919132149155446097, guid: 8f85ba1b8e191445ca074dc2a335f303, type: 3}
       propertyPath: m_Name
       value: refrigerator
       objectReference: {fileID: 0}
+    - target: {fileID: 3783679286434157976, guid: 8f85ba1b8e191445ca074dc2a335f303, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 874e734682a907945840cefa2967ea31, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -436,10 +448,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6483264720827800135, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: -2682167134973850427, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
     - target: {fileID: 919132149155446097, guid: 8defa818d076445218d141424bc51cf3, type: 3}
       propertyPath: m_Name
       value: kitchenVases
       objectReference: {fileID: 0}
+    - target: {fileID: 2586607309129781981, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: 4191509097384965755, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: 7216655632450529714, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: 7330095381222774183, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: 7484468418975526891, guid: 8defa818d076445218d141424bc51cf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -585,10 +625,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2430532848570452263, guid: d4f98c2252f524639abf2219ef0ec972, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51172e5ec54aa324f81b6125e47b18a2, type: 2}
+    - target: {fileID: -2187793545981747583, guid: d4f98c2252f524639abf2219ef0ec972, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51172e5ec54aa324f81b6125e47b18a2, type: 2}
     - target: {fileID: 919132149155446097, guid: d4f98c2252f524639abf2219ef0ec972, type: 3}
       propertyPath: m_Name
       value: couch_withPillows
       objectReference: {fileID: 0}
+    - target: {fileID: 4221849894866090560, guid: d4f98c2252f524639abf2219ef0ec972, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51172e5ec54aa324f81b6125e47b18a2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -642,6 +694,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7585242468991537088, guid: cad2571fb87c4424395db3aca8192453, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: -3574031628262424897, guid: cad2571fb87c4424395db3aca8192453, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: -1482727762730448115, guid: cad2571fb87c4424395db3aca8192453, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
+    - target: {fileID: 630802283892159582, guid: cad2571fb87c4424395db3aca8192453, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
     - target: {fileID: 919132149155446097, guid: cad2571fb87c4424395db3aca8192453, type: 3}
       propertyPath: m_Name
       value: livingroom_lights
@@ -661,15 +729,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.481
+      value: -4.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.094
+      value: 0.654
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.69
+      value: -6.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
       propertyPath: m_LocalRotation.w
@@ -699,6 +767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9d718449c1cc1c4f947728c19a32600, type: 2}
     - target: {fileID: 919132149155446097, guid: 3d08a9ec877ac4f858b63cf702cdb807, type: 3}
       propertyPath: m_Name
       value: kitchenIsland
@@ -756,10 +828,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -755009964982586462, guid: f34a57f2b83a54c648e94afcacbaa480, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
     - target: {fileID: 919132149155446097, guid: f34a57f2b83a54c648e94afcacbaa480, type: 3}
       propertyPath: m_Name
       value: kitchenLights
       objectReference: {fileID: 0}
+    - target: {fileID: 2211603234644381724, guid: f34a57f2b83a54c648e94afcacbaa480, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32297b1d1dd57e74183446fa2fd9ebbc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -773,6 +853,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9158636819078260051, guid: 837f76b3e15e04f318112b858edea10a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e0af87f012faaf438bd7d2783514e6e, type: 2}
     - target: {fileID: -8679921383154817045, guid: 837f76b3e15e04f318112b858edea10a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.02
@@ -817,6 +901,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: livingroomChairs_withPillows
       objectReference: {fileID: 0}
+    - target: {fileID: 2679351552287522111, guid: 837f76b3e15e04f318112b858edea10a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9047841c703a2e0488cadf5de788a647, type: 2}
+    - target: {fileID: 3319239556798519955, guid: 837f76b3e15e04f318112b858edea10a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9047841c703a2e0488cadf5de788a647, type: 2}
+    - target: {fileID: 8885329061251328210, guid: 837f76b3e15e04f318112b858edea10a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e0af87f012faaf438bd7d2783514e6e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -870,6 +966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6a0511fc8d6604f538e71b1af637380b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9d718449c1cc1c4f947728c19a32600, type: 2}
     - target: {fileID: 919132149155446097, guid: 6a0511fc8d6604f538e71b1af637380b, type: 3}
       propertyPath: m_Name
       value: kitchen
@@ -889,15 +989,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.63
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.68
+      value: 0.117
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.742
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -927,6 +1027,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2339499586288615448, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5666408b05a9db94aab8c5471a94f904, type: 2}
+    - target: {fileID: -615309114576341211, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5666408b05a9db94aab8c5471a94f904, type: 2}
+    - target: {fileID: -230338755355663336, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5666408b05a9db94aab8c5471a94f904, type: 2}
     - target: {fileID: 919132149155446097, guid: 5c9c42651efa94e3dae70c7d04f2cca9, type: 3}
       propertyPath: m_Name
       value: barstools_forKitchen
@@ -984,6 +1096,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f08e47a5e78d747b982019ce35f0cfbd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9d718449c1cc1c4f947728c19a32600, type: 2}
     - target: {fileID: 919132149155446097, guid: f08e47a5e78d747b982019ce35f0cfbd, type: 3}
       propertyPath: m_Name
       value: livingroom
